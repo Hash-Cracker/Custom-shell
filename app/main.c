@@ -18,8 +18,7 @@ int main() {
   while(1){
     printf("$ ");
     fgets(input, 100, stdin);
-    input[strcspn(input, "\n")] = '\0';
-
+    input[strlen(input) - 1] = '\0';
     if(!strcmp(input, "exit 0")){
       return 0;
     }
