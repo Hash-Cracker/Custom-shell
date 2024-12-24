@@ -18,7 +18,6 @@ int main() {
   while(1){
     printf("$ ");
     fgets(input, 100, stdin);
-    fflush(stdout);
     input[strlen(input) - 1] = '\0';
 
     if(!strcmp(input, "exit 0")){
