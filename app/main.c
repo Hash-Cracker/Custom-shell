@@ -29,7 +29,6 @@ int main() {
       continue;
     }
     printf("%s: command not found\n", input);
-
   }
     
     return 0;
