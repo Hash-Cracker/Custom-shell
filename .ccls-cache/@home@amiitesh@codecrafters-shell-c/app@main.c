@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 int main() {
@@ -19,6 +20,9 @@ int main() {
     fgets(input, 100, stdin);
     fflush(stdout);
     input[strlen(input) - 1] = '\0';
+    if(!strcmp(input, "exit")){
+      exit(0);
+    }
     printf("%s: command not found\n", input);
   }
   return 0;
